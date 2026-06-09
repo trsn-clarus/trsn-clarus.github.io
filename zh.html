@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Clarus 的中文韩文翻译、司法口译、AI 翻译审校与本地 LLM 翻译系统实务经历。" />
+  <meta name="description" content="Clarus / Minsoo Cho 的中文韩文翻译、司法口译、AI 翻译审校与本地 LLM 翻译系统实务简介。" />
   <title>Clarus | Chinese-Korean Translation & AI Review</title>
   <link rel="alternate" hreflang="ko" href="index.html" />
   <link rel="alternate" hreflang="zh" href="zh.html" />
@@ -11,21 +11,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles-hero-fix.css" />
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="返回 Clarus 首页">
-      <span class="brand-mark">C</span>
-      <span class="brand-text">
-        <strong>Clarus</strong>
-        <small>Minsoo Cho</small>
-      </span>
+      <img src="assets/logo-clarus.svg" alt="Clarus" />
     </a>
     <nav class="nav-links" aria-label="主要菜单">
+      <a href="#reason">委托理由</a>
       <a href="#experience">经历</a>
       <a href="#education">教育</a>
       <a href="#projects">项目</a>
-      <a href="#services">服务</a>
       <a href="#contact">联系</a>
     </nav>
     <div class="language-switch" aria-label="语言选择">
@@ -34,65 +31,82 @@
     </div>
   </header>
 
-  <main id="top" class="profile-page">
-    <section class="profile-hero" aria-labelledby="hero-title">
-      <div class="portrait-card" aria-label="个人照片位置">
-        <div class="portrait-placeholder">
-          <span>Clarus</span>
-          <small>profile photo</small>
-        </div>
-      </div>
-      <div class="hero-copy">
-        <p class="eyebrow">Chinese-Korean Translation · AI Translation Review</p>
+  <main id="top" class="page-shell">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <aside class="logo-panel" aria-label="Trsn Clarus identity">
+        <img src="assets/trsn-clarus-logo.svg" alt="Trsn Clarus" />
+        <p>Translation · China Desk · AI Review</p>
+      </aside>
+
+      <div class="hero-main">
+        <p class="eyebrow">Chinese-Korean Translation / AI Translation Review</p>
         <h1 id="hero-title">Clarus</h1>
-        <p class="hero-lead">将中文文件与 AI 翻译结果整理成可以直接用于业务的语言。</p>
-        <p class="hero-text">
+        <p class="hero-lead">将中文文件与 AI 翻译结果整理成可用于实际业务的语言。</p>
+        <p class="hero-copy">
           在西江大学学习心理学与中国文化学，并完成一般研究生院中国文化学硕士课程。
-          结合韩中/中韩翻译、司法口译、字幕本地化、搜索质量评估以及本地 LLM 翻译系统审校经验，
-          判断翻译结果是否真正符合文件目的与读者语境。
+          基于中文文件、商务沟通、司法口译、字幕本地化和 AI 翻译审校经验，
+          判断译文是否真正符合文件目的与读者语境。
         </p>
         <div class="hero-actions">
           <a class="button primary" href="#contact">邮件咨询</a>
           <a class="button secondary" href="#experience">查看履历</a>
         </div>
       </div>
+
+      <aside class="profile-card" aria-label="核心资料">
+        <h2>Profile</h2>
+        <dl>
+          <div><dt>Work</dt><dd>韩中/中韩翻译、司法口译、AI 翻译审校</dd></div>
+          <div><dt>Focus</dt><dd>文件语境、术语一致性、中文表达</dd></div>
+          <div><dt>Base</dt><dd>西江大学心理学 · 中国文化学</dd></div>
+          <div><dt>Graduate</dt><dd>中国文化学硕士课程结业</dd></div>
+          <div><dt>Context</dt><dd>基于中国生活经验的文化与语言判断</dd></div>
+        </dl>
+      </aside>
     </section>
 
-    <section class="proof-line" aria-label="核心资料">
-      <span>西江大学心理学 · 中国文化学</span>
-      <span>中国文化学硕士课程结业</span>
+    <section class="proof-bar" aria-label="核心可信要素">
       <span>中文司法口译资格</span>
-      <span>AI 翻译审校与评估</span>
+      <span>HSK 6级</span>
+      <span>AI 翻译系统实务</span>
+      <span>字幕 · 文件 · 搜索质量评估</span>
     </section>
 
-    <section id="why" class="section why-section">
-      <p class="section-kicker">Why Clarus</p>
-      <h2>AI 完成翻译之后，仍然需要人的判断。</h2>
+    <section id="reason" class="section reason-section">
+      <div class="section-head">
+        <p class="section-kicker">Why Clarus</p>
+        <h2>AI 翻译很快。但最终文件仍然需要人的判断。</h2>
+      </div>
       <div class="reason-grid">
         <article>
-          <h3>语境确认</h3>
-          <p>AI 翻译速度很快，但不一定理解文件目的、读者和使用场景。Clarus 会确认译文是否适合真实业务语境。</p>
+          <span>01</span>
+          <h3>确认语境</h3>
+          <p>根据文件目的、读者、正式程度和业务场景，检查译文是否真的可用。</p>
         </article>
         <article>
-          <h3>术语一致性</h3>
-          <p>合同、产品资料、技术文件和内部文档需要稳定的术语体系。Clarus 会整理术语与表达标准。</p>
+          <span>02</span>
+          <h3>统一术语</h3>
+          <p>合同、产品资料和技术文件需要稳定的术语标准。Clarus 会整理术语和表达规范。</p>
         </article>
         <article>
-          <h3>负责任的审校</h3>
-          <p>以司法口译与公共机构语境所需的准确性、中立性和表达责任为标准检查翻译结果。</p>
+          <span>03</span>
+          <h3>过滤生硬直译</h3>
+          <p>有些译文意思看似正确，却可能让中文读者感到生硬或产生误解。Clarus 会进行人工审校。</p>
         </article>
       </div>
     </section>
 
     <section id="experience" class="section timeline-section">
-      <p class="section-kicker">Experience</p>
-      <h2>经历</h2>
+      <div class="section-head">
+        <p class="section-kicker">Experience</p>
+        <h2>经历</h2>
+      </div>
       <div class="timeline">
         <article>
           <time>2026.02 - 现在</time>
           <div>
-            <h3>企业 AI 翻译系统实务</h3>
-            <p>参与公司内部繁体中文-英文 AI 翻译系统开发、LLM 审校与专业术语库制作相关工作。</p>
+            <h3>韩国大型企业 AI 翻译系统实务</h3>
+            <p>负责内部繁体中文-英文 AI 翻译系统的 LLM 审校、专业术语库制作与翻译质量标准整理。</p>
           </div>
         </article>
         <article>
@@ -120,8 +134,10 @@
     </section>
 
     <section id="education" class="section timeline-section">
-      <p class="section-kicker">Education</p>
-      <h2>教育与资格</h2>
+      <div class="section-head">
+        <p class="section-kicker">Education</p>
+        <h2>教育与资格</h2>
+      </div>
       <div class="timeline">
         <article>
           <time>2023.09 - 2025.06</time>
@@ -134,22 +150,24 @@
           <time>本科</time>
           <div>
             <h3>西江大学心理学 · 中国文化学</h3>
-            <p>同时学习心理学与中国文化学，建立从行为、文化差异和语言表达之间理解文本的基础。</p>
+            <p>建立从行为、文化差异和语言表达之间理解文本的基础。</p>
           </div>
         </article>
         <article>
           <time>资格</time>
           <div>
             <h3>中文司法口译资格 · HSK 6级</h3>
-            <p>以正式文件和程序性沟通所要求的准确性与中立性为标准进行工作。</p>
+            <p>以正式程序和文件所要求的准确性、中立性与表达责任为标准进行工作。</p>
           </div>
         </article>
       </div>
     </section>
 
     <section id="projects" class="section project-section">
-      <p class="section-kicker">Projects</p>
-      <h2>项目</h2>
+      <div class="section-head">
+        <p class="section-kicker">Projects</p>
+        <h2>项目</h2>
+      </div>
       <div class="project-list">
         <article>
           <h3>基于 LLM 的翻译工具审校与术语库工作</h3>
@@ -175,20 +193,14 @@
           </dl>
           <p>参与 AI 训练数据构建，根据搜索词和商品语境判断语义关联。</p>
         </article>
-        <article>
-          <h3>中国文化内容与营销语境研究</h3>
-          <dl>
-            <div><dt>角色</dt><dd>学习讨论主导、资料整理、合作写作</dd></div>
-            <div><dt>能力</dt><dd>中国文化内容、平台语境、学术写作</dd></div>
-          </dl>
-          <p>围绕中国文化内容与营销主题整理资料，并结构化讨论方向。</p>
-        </article>
       </div>
     </section>
 
     <section id="services" class="section services-section">
-      <p class="section-kicker">Services</p>
-      <h2>可委托的工作</h2>
+      <div class="section-head">
+        <p class="section-kicker">Services</p>
+        <h2>可委托的工作</h2>
+      </div>
       <ul class="service-list">
         <li><strong>韩中 / 中韩翻译</strong><span>根据文件目的与读者，翻译文件、内容、邮件和产品资料。</span></li>
         <li><strong>司法口译及公共机构相关口译</strong><span>考虑正式程序所需的准确性与中立性。</span></li>

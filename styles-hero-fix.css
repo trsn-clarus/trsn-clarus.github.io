@@ -213,6 +213,11 @@ h1 {
   line-height: 1.34;
 }
 
+.hero-lead span,
+.section h2 span {
+  display: block;
+}
+
 .hero-copy {
   max-width: 600px;
   margin: 22px 0 0;
@@ -355,6 +360,18 @@ h1 {
   font-size: 3rem;
   line-height: 1.16;
   letter-spacing: 0;
+}
+
+:lang(zh-CN) p,
+:lang(zh-CN) h1,
+:lang(zh-CN) h2,
+:lang(zh-CN) h3,
+:lang(zh-CN) dd,
+:lang(zh-CN) span {
+  word-break: normal;
+  word-break: auto-phrase;
+  line-break: loose;
+  overflow-wrap: break-word;
 }
 
 .reason-grid {
@@ -590,6 +607,11 @@ h1 {
     font-size: 1.55rem;
   }
 
+  :lang(zh-CN) .hero-lead {
+    font-size: 1.44rem;
+    line-height: 1.42;
+  }
+
   .section h2 {
     font-size: 2.1rem;
   }
@@ -651,8 +673,8 @@ h1 {
   .contact-section p {
     width: min(100%, 312px);
     max-width: 312px;
-    word-break: break-all;
-    overflow-wrap: anywhere;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
   .site-footer {

@@ -12,3 +12,25 @@ const updateHeader = () => {
 
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
+
+// Mobile nav
+const hamburger = document.querySelector(".hamburger");
+const mobileNav = document.getElementById("mobile-nav");
+
+if (hamburger && mobileNav) {
+  hamburger.addEventListener("click", () => {
+    const isOpen = hamburger.classList.toggle("is-open");
+    mobileNav.classList.toggle("is-open", isOpen);
+    hamburger.setAttribute("aria-expanded", String(isOpen));
+    document.body.style.overflow = isOpen ? "hidden" : "";
+  });
+
+  mobileNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("is-open");
+      mobileNav.classList.remove("is-open");
+      hamburger.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    });
+  });
+}

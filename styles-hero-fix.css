@@ -1024,3 +1024,137 @@ p, h1, h2, h3, h4 {
 
   .about-pillars { grid-template-columns: 1fr; }
 }
+
+/* =============================================
+   PAGE SWITCH — nav link between translation / tech pages
+   ============================================= */
+.nav-page-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--gold);
+  color: var(--gold) !important;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.nav-page-switch:hover {
+  background: var(--gold);
+  color: var(--navy) !important;
+}
+.mobile-nav .nav-page-switch {
+  margin-top: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* =============================================
+   CROSS-PROMO BANNER — bottom of services section
+   ============================================= */
+.page-crosslink {
+  margin-top: 48px;
+  padding: 28px 32px;
+  background: var(--surface-up);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.page-crosslink p {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.6;
+}
+.page-crosslink strong { color: var(--navy); }
+
+/* =============================================
+   TERMINAL VISUAL — ai.html hero right panel
+   ============================================= */
+.hero-terminal {
+  background: var(--navy);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(176,141,87,0.25);
+  box-shadow: 0 24px 56px rgba(11,31,58,0.2);
+  width: 100%;
+}
+.terminal-bar {
+  background: rgba(255,255,255,0.04);
+  padding: 11px 16px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.t-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.t-dot:nth-child(1) { background: #FF5F56; }
+.t-dot:nth-child(2) { background: #FFBD2E; }
+.t-dot:nth-child(3) { background: #27C93F; }
+.terminal-fname {
+  margin-left: auto;
+  font-size: 11px;
+  color: rgba(255,255,255,0.28);
+  font-family: 'Courier New', Consolas, monospace;
+  letter-spacing: 0.3px;
+}
+.terminal-body {
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-family: 'Courier New', Consolas, monospace;
+  font-size: 13px;
+}
+.terminal-body p { margin: 0; line-height: 1.6; }
+.t-cmd { color: rgba(255,255,255,0.4); }
+.t-cmd span { color: var(--gold); }
+.t-ok { color: #4ADE80; }
+.t-ok::before { content: '✓  '; }
+.t-muted { color: rgba(255,255,255,0.25); }
+.t-divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin: 4px 0;
+}
+.t-result { color: var(--gold); font-weight: 700; }
+.t-sub { color: rgba(255,255,255,0.35); font-size: 11.5px; }
+
+/* =============================================
+   AI PAGE — about variant (lighter bg)
+   ============================================= */
+.about-light {
+  background: var(--bg);
+  padding: 96px 0;
+}
+.about-light .container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .about-light .container { grid-template-columns: 1fr; gap: 36px; }
+  .page-crosslink { flex-direction: column; }
+}
